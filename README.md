@@ -62,27 +62,49 @@ servidor/                 → a API (o "back-end")
   db.json                 → o "banco de dados" (usuários, publicações, comentários...)
   uploads/                → fotos e vídeos enviados pelos usuários
 
-src/                      → o site (o "front-end")
-  main.ts                 → ponto de partida do site
-  App.vue                 → moldura: menu lateral + página atual + barra inferior
-  paginas/                → uma tela para cada endereço (feed, perfil, login...)
-  componentes/            → pedaços reutilizáveis das telas
-    comuns/               → peças genéricas (foto de perfil)
-    layout/               → menu lateral e barra inferior
-    publicacao/           → cartão da publicação (foto/vídeo), botões de ação, grade de miniaturas
-    comentarios/          → gaveta de comentários
-    perfil/               → cabeçalho do perfil
-  servicos/               → conversa com a API (um arquivo por assunto)
-  estado/                 → informações compartilhadas (quem está logado)
-  rotas/                  → qual página abre em cada endereço
-  tipos/                  → formato dos dados (usuário, publicação, comentário...)
-  utilitarios/            → pequenas funções de ajuda (formatar números, datas e iniciais)
-  estilos/                → cores e aparência geral do site
+src/                          → o site (o "front-end")
+  main.ts                     → ponto de partida do site
+  App.vue                     → moldura: menu lateral + página atual + barra inferior
+  style.css                   → cores e aparência geral do site
 
-public/                   → arquivos servidos como estão (ícone do site)
+  view/                       → as páginas (uma para cada endereço)
+    Home.vue                  → feed "Para você"
+    Discover.vue              → busca
+    Post.vue                  → uma publicação só
+    Upload.vue                → publicar foto ou vídeo
+    Profile.vue               → perfil de um usuário
+    Login.vue                 → entrar / criar conta
+    NotFound.vue              → página 404
+
+  components/                 → pedaços reutilizáveis das páginas
+    UserAvatar.vue            → foto de perfil redonda (ou iniciais)
+    CommentsDrawer.vue        → gaveta de comentários
+    ProfileHeader.vue         → cabeçalho do perfil
+    layout/                   → menu lateral, barra inferior e itens do menu
+    post/                     → cartão da publicação, botões de ação e grade de miniaturas
+
+  controller/                 → conversa com a API (um arquivo por assunto)
+    service.controller.ts     → base de todos os pedidos (token, erros, envio de arquivos)
+    auth.controller.ts        → quem está logado: entrar, cadastrar, sair
+    user.controller.ts        → usuários e seguidores
+    post.controller.ts        → publicações e curtidas
+    comment.controller.ts     → comentários
+    upload.controller.ts      → regras e envio de fotos/vídeos
+
+  interfaces/                 → formato dos dados
+    user.interface.ts         → usuário, login, cadastro, seguir
+    post.interface.ts         → publicação, curtida, envio de arquivo
+    comment.interface.ts      → comentário
+
+  routes/index.ts             → qual página abre em cada endereço
+  utils/format.ts             → pequenas funções de ajuda (números, datas e iniciais)
+
+public/                       → arquivos servidos como estão (ícone do site)
 ```
 
-> A pasta `public/` mantém o nome em inglês porque o Vite exige esse nome.
+> A organização de `src/` segue o modelo do projeto da aula
+> ([senac-26-vue-3-aula](https://github.com/AndersonKeller/senac-26-vue-3-aula)):
+> `view/`, `components/`, `controller/`, `interfaces/` e `routes/`.
 
 ## Endereços do site
 

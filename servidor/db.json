@@ -62,6 +62,15 @@
       "avatar": "/uploads/1793316461776-a1d1a097-3cdf-48bd-a115-37335c1c71e9.webp",
       "bio": "bolas gulosas adoçadas",
       "id": 7
+    },
+    {
+      "email": "teste@gmail.com",
+      "password": "$2a$10$s8cf7SpSWt.B.nuCjWXjLuCCDHwsDELYsc14T2NTUrL6qTA5yn6KK",
+      "username": "teste2",
+      "name": "t",
+      "avatar": "",
+      "bio": "",
+      "id": 8
     }
   ],
   "posts": [
@@ -131,6 +140,11 @@
       "postId": 2,
       "userId": 7,
       "id": 4
+    },
+    {
+      "postId": 1,
+      "userId": 8,
+      "id": 5
     }
   ],
   "follows": [

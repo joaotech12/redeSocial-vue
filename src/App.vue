@@ -9,8 +9,8 @@
 -->
 <script setup lang="ts">
 // Importa as peças do layout para usar no <template> abaixo
-import AppSidebar from '@/componentes/layout/AppSidebar.vue'
-import BottomNav from '@/componentes/layout/BottomNav.vue'
+import AppSidebar from '@/components/layout/AppSidebar.vue'
+import BottomNav from '@/components/layout/BottomNav.vue'
 </script>
 
 <template>

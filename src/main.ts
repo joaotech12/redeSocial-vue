@@ -10,7 +10,7 @@
  */
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './rotas'
-import './estilos/main.css'
+import router from './routes'
+import './style.css'
 
 createApp(App).use(router).mount('#app')
