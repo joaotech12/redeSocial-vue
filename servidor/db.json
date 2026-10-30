@@ -1,0 +1,158 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "joao",
+      "name": "João Vitor",
+      "email": "joao@email.com",
+      "password": "$2a$10$3nRIychlSisHu7gRuV5ZL.WL98YnSXF7.zj8pCFjhzdRy1IOXddV2",
+      "avatar": "",
+      "bio": "Dev Vue nas horas vagas 🚀"
+    },
+    {
+      "id": 2,
+      "username": "maria.dev",
+      "name": "Maria Souza",
+      "email": "maria@email.com",
+      "password": "$2a$10$op9S/fe2zW0S81R00RAL6.Cmj4boiWVB1b1HNE2LKT55jsav9N5Ea",
+      "avatar": "",
+      "bio": "Viagens, café e código ☕"
+    },
+    {
+      "id": 3,
+      "username": "pedro.films",
+      "name": "Pedro Lima",
+      "email": "pedro@email.com",
+      "password": "$2a$10$KWiMX9qlBI/LkWMPo0C0Fuf9SI/yGbT.Y9/rNDienJnJl905mu5Vm",
+      "avatar": "",
+      "bio": "Curtas e animações 🎬"
+    },
+    {
+      "id": 4,
+      "username": "teste",
+      "name": "teste",
+      "email": "teste@email.com",
+      "password": "$2a$10$qctdm6xrufckVV.XtuweWObcwp8WbN9LULkrajBrRxY5lExBJrsAm",
+      "avatar": "",
+      "bio": ""
+    },
+    {
+      "id": 5,
+      "username": "ovos",
+      "name": "ovosgulosos",
+      "email": "ovos@gmail.com",
+      "password": "$2a$10$c6ggwmXMZAdBcmK8i/H86O5QCOsWPulfGfcx6aSvbc0UY7.v.hlbG",
+      "avatar": "",
+      "bio": ""
+    },
+    {
+      "id": 6,
+      "username": "olivier",
+      "name": "Olivier (admin)",
+      "email": "olivier@mail.com",
+      "password": "$2a$10$u80JPDRyKC6MD/ueVzyV5.yvDVTTg20JGKznu4fCdKlwXdqjXwNz6",
+      "avatar": "",
+      "bio": "Administrador"
+    },
+    {
+      "email": "bolas@gmail.com",
+      "password": "$2a$10$zjgEW8WNt/wv9hjRKuqHRe/3DYYtzTQDYln.tuuqMmDZfbu/B8Byu",
+      "username": "bolas",
+      "name": "bolasmurchas",
+      "avatar": "/uploads/1793316461776-a1d1a097-3cdf-48bd-a115-37335c1c71e9.webp",
+      "bio": "bolas gulosas adoçadas",
+      "id": 7
+    }
+  ],
+  "posts": [
+    {
+      "userId": 7,
+      "mediaUrl": "/uploads/1793316263100-8ef921b8-c108-4a7e-bdd1-c3830639b439.webp",
+      "mediaType": "image",
+      "description": "",
+      "music": "Som original - bolas",
+      "createdAt": "2026-10-29T23:24:23.106Z",
+      "id": 1
+    },
+    {
+      "userId": 7,
+      "mediaUrl": "/uploads/1793316485457-5b153da7-60aa-4048-8735-769f17c069d4.webp",
+      "mediaType": "image",
+      "description": "",
+      "music": "Som original - bolas",
+      "createdAt": "2026-10-29T23:28:05.460Z",
+      "id": 2
+    },
+    {
+      "userId": 7,
+      "mediaUrl": "/uploads/1793316491529-d8ca23a5-1d70-4cbb-894d-ffb88f62b19e.webp",
+      "mediaType": "image",
+      "description": "",
+      "music": "Som original - bolas",
+      "createdAt": "2026-10-29T23:28:11.532Z",
+      "id": 3
+    },
+    {
+      "userId": 7,
+      "mediaUrl": "/uploads/1793316498665-a1fc71bd-214c-4dd2-838d-bcb943f2e350.webp",
+      "mediaType": "image",
+      "description": "",
+      "music": "Som original - bolas",
+      "createdAt": "2026-10-29T23:28:18.668Z",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "postId": 1,
+      "userId": 7,
+      "text": "bosonaro",
+      "createdAt": "2026-10-29T23:25:08.175Z",
+      "id": 1
+    }
+  ],
+  "likes": [
+    {
+      "postId": 1,
+      "userId": 7,
+      "id": 1
+    },
+    {
+      "postId": 4,
+      "userId": 7,
+      "id": 2
+    },
+    {
+      "postId": 3,
+      "userId": 7,
+      "id": 3
+    },
+    {
+      "postId": 2,
+      "userId": 7,
+      "id": 4
+    }
+  ],
+  "follows": [
+    {
+      "id": 1,
+      "userId": 1,
+      "followingId": 2
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "followingId": 3
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "followingId": 3
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "followingId": 3
+    }
+  ]
+}

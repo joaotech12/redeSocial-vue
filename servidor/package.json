@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.22.3",
+    "json-server": "^0.16.3",
+    "json-server-auth": "^2.1.0",
+    "multer": "^1.4.5-lts.2"
+  },
+  "name": "redesocial-servidor",
+  "private": true,
+  "description": "API da rede social (json-server + json-server-auth)"
+}

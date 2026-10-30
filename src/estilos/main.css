@@ -1,0 +1,111 @@
+/*
+ * ESTILOS GLOBAIS
+ * Cores, fontes e aparência de elementos usados no site inteiro.
+ */
+
+/* Variáveis de cor e tamanho: mude aqui para alterar o visual do site todo */
+:root {
+  --bg: #000; /* fundo */
+  --surface: #121212; /* fundo de caixas e painéis */
+  --surface-2: #1f1f1f; /* fundo de campos e botões */
+  --border: #2f2f2f; /* cor das bordas */
+  --text: #fff; /* texto principal */
+  --text-muted: #a1a1a1; /* texto secundário (mais apagado) */
+  --primary: #fe2c55; /* cor de destaque (rosa) */
+  --accent: #25f4ee; /* cor de destaque secundária (azul) */
+  --radius: 12px; /* arredondamento dos cantos */
+  --nav-height: 56px; /* altura da barra inferior no celular */
+
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  color-scheme: dark;
+}
+
+/* Faz larguras e alturas incluírem bordas e espaçamentos (mais fácil de calcular) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+/* Links sem sublinhado e com a mesma cor do texto */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Botões sem a aparência padrão do navegador */
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Campos de texto */
+input,
+textarea {
+  font: inherit;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+/* Destaque do campo que está selecionado */
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: -1px;
+}
+
+/* Botão padrão */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+
+/* Botão de ação principal (rosa) */
+.btn--primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+/* Botão desativado */
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Área central das páginas comuns (busca, perfil, publicar...) */
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px calc(var(--nav-height) + 24px);
+}
+
+/* Texto secundário */
+.muted {
+  color: var(--text-muted);
+}
+
+/* Mensagens de erro */
+.error {
+  color: var(--primary);
+}

@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Vídeos enviados pelos usuários (ficam só no seu computador)
+servidor/uploads/*
+!servidor/uploads/.gitkeep
